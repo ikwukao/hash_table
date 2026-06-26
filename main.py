@@ -13,3 +13,13 @@ class HashTable:
 
         self.collection[hashed_key][key] = value
         
+    def remove(self, key):
+        hashed_key = self.hash(key)
+        
+        if hashed_key in self.collection:
+            if key in self.collection[hashed_key]:
+                del self.collection[hashed_key][key]
+                
+                if not self.collection[hashed_key]:
+                    del self.collection[hashed_key]
+                    
