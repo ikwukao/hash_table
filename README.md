@@ -198,3 +198,7 @@ Created as part of a Python Data Structures learning journey and the freeCodeCam
 ## License
 
 This project is provided for educational and personal learning purposes.
+
+### Program Output
+
+![Hashed Table Output](./img/hash_table_output.png)
