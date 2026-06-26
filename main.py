@@ -23,3 +23,10 @@ class HashTable:
                 if not self.collection[hashed_key]:
                     del self.collection[hashed_key]
                     
+    def lookup(self, key):
+        hashed_key = self.hash(key)
+        
+        if hashed_key in self.collection:
+            return self.collection[hashed_key].get(key)
+        
+        return None
