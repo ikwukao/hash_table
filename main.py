@@ -1,7 +1,7 @@
 class HashTable:
     def __init__(self):
         self.collection = {}
-        
+
     def hash(self, key):
         return sum(ord(char) for char in key)
 
@@ -12,4 +12,3 @@ class HashTable:
             self.collection[hashed_key] = {}
 
         self.collection[hashed_ky][key] = value
-
